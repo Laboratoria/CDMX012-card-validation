@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" type="text/javascript"></script>
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <span id="card-wrapper">
+        Inserta el numero de tarjeta
+        <input type="text" id="creditCardInput" onChange="encryptText()">
+      </span>
+    </main>
     <footer></footer>
-    <script src="index.js" type="module"></script>
+    
   </body>
 </html>
