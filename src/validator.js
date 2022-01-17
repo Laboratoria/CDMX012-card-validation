@@ -3,18 +3,30 @@ const validator = {
   isValid: function (tarjeta) {
 
     let suma = 0;
-    for (let i = tarjeta.lenght - 1; i >= 0; i--) {
-      let valor = tarjeta.chartAt(i)
-      let posPar = i % 2 == 0;
-      if (posPar) {
+    console.log("is valid ants de for", tarjeta.length - 1);
+    const cantidadDeDigitosEsImpar = (tarjeta.length - 1) % 2 === 0;
+    for (let i = tarjeta.length - 1; i >= 0; i--) {
+      let posicionPar = false;
+      if (cantidadDeDigitosEsImpar) {
+        posicionPar = i % 2 !== 0
+      } else {
+        posicionPar = i % 2 === 0;
+      }
+
+      let valor = tarjeta.charAt(i) * 1;
+
+      if (posicionPar) {
         valor = valor * 2;
         if (valor > 9) {
           let entero = 1;
           valor = entero + valor % 10;
         }
       }
+      console.log(i + "(" + posicionPar + "):" + tarjeta.charAt(i) + " => " + valor, typeof valor);
       suma = suma + valor;
     }
+
+    console.log("suma=" + suma);
     if (suma % 10 === 0)
       return true;
     else
