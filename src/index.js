@@ -1,3 +1,3 @@
 import validator from './validator.js';
-
-console.log(validator);
+let numTarjeta= "4137894711755904"
+console.log(validator.isValid(numTarjeta));

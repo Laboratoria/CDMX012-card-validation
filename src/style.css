@@ -106,6 +106,10 @@ body{
     border-radius: 27px;
     border-style: none;
 }
+.button:hover {
+    cursor:pointer;
+    background: #0a9b83;
+  }
 
 .mensajeAlerta{
     position: absolute;
