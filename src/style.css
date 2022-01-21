@@ -1,161 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,400;0,700;1,100&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
-header{
-    position: sticky;
-    top: 0;
-    margin-top: 0px;
-    position: absolute;
+header {
+  position: sticky;
+  top: 0;
+  margin-top: 0px;
+  position: absolute;
 }
 
-body{
-    margin: 0px;
-    margin-top: 0px;
-    width: 1920px;
-    height: 955px;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-family: 'Gotham', sans-serif;
-    font-family: 'Gotham Black', sans-serif;
-    font-family: 'Gotham Light', sans-serif;
-    background-image: url(https://i.ibb.co/j6vgSQ9/background-spotify.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
+body {
+  margin: 0px;
+  margin-top: 0px;
+  width: 1920px;
+  height: 955px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Gotham', sans-serif;
+  font-family: 'Gotham Black', sans-serif;
+  font-family: 'Gotham Light', sans-serif;
+  background-image: url(https://i.ibb.co/j6vgSQ9/background-spotify.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
-.img_encabezado{
-    margin: 0%;
-    margin-left: 0px;
-    align-content: center;
-    align-self: top;
-    background-color:black;
+.img_encabezado {
+  margin: 0%;
+  margin-left: 0px;
+  align-content: center;
+  align-self: top;
+  background-color: black;
 }
 
-.caja_validación{
-    background: #ffffff;
-    position: absolute;
-    width: 520px;
-    height: 650px;
-    text-align: left;
-    left: 150px;
-    top: 150px;
-    border-radius: 60px ;
-}
-
-
-#imagenTarjeta{
-    position: absolute;
-    width: 342px;
-    height: 222px;
-    left: 102px;
-    top: 30px;
-}
-
-.texto1{
-    color: #000000;
-    position: absolute;
-    width: 451px;
-    height: 54px;
-    left: 53px;
-    top: 220px;
-    font-family: 'Gotham Black', sans-serif;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 53px;
-    margin: 0%;
+.caja_validación {
+  background: #ffffff;
+  position: absolute;
+  width: 520px;
+  height: 650px;
+  text-align: left;
+  left: 150px;
+  top: 150px;
+  border-radius: 60px;
 }
 
 
-.subtitulo{
-    font-family: 'Gotham Light', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: #8C8C8C;
-    border: black 13px;
-    position: absolute;
-    width: 413px;
-    height: 26px;
-    left: 53px;
-    top: 300px;
+#imagenTarjeta {
+  position: absolute;
+  width: 342px;
+  height: 222px;
+  left: 102px;
+  top: 30px;
 }
 
-#inputDigitos{
-    font-family: 'Gotham Light', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    padding-left: 15px;
-    color: #8C8C8C;
-    position: absolute;
-    width: 400px;
-    height: 40px;
-    left: 53px;
-    top: 400px;
+.texto1 {
+  color: #000000;
+  position: absolute;
+  width: 451px;
+  height: 54px;
+  left: 53px;
+  top: 220px;
+  font-family: 'Gotham Black', sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 53px;
+  margin: 0%;
 }
 
-.button{
-    position: absolute;
-    width: 420px;
-    height: 50px;
-    left: 53px;
-    top: 420px;
-    font-family: 'Gotham Light', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    color: #FFFFFF;
-    margin-top: 50px;
-    background: #00E896;
-    border-radius: 27px;
-    border-style: none;
+
+.subtitulo {
+  font-family: 'Gotham Light', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #8C8C8C;
+  border: black 13px;
+  position: absolute;
+  width: 413px;
+  height: 26px;
+  left: 53px;
+  top: 300px;
 }
+
+#tarjeta {
+  font-family: 'Gotham Light', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 15px;
+  color: #8C8C8C;
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: 53px;
+  top: 400px;
+}
+
+.button {
+  position: absolute;
+  width: 420px;
+  height: 50px;
+  left: 53px;
+  top: 420px;
+  font-family: 'Gotham Light', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 50px;
+  background: #00E896;
+  border-radius: 27px;
+  border-style: none;
+}
+
 .button:hover {
-    cursor:pointer;
-    background: #0a9b83;
-  }
-
-.mensajeAlerta{
-    position: absolute;
-    background-color: red;
-    font-family: 'Gotham Light', sans-serif;
-    font-size: 14px;
-    text-align: left;
-    color: #ffffff;
-    width: 400px;
-    height: 50px;
-    left: 53px;
-    top: 538px;
-    padding-left: 15px;
+  cursor: pointer;
+  background: #0a9b83;
 }
 
-#redesSociales{
-    position: absolute;
-    width: 280px;
-    height: 110x;
-    left: 280px;
-    top: 815px;
+.mensajeAlerta {
+  position: absolute;
+  background-color: red;
+  font-family: 'Gotham Light', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #ffffff;
+  width: 400px;
+  height: 50px;
+  left: 53px;
+  top: 538px;
+  padding-left: 15px;
 }
 
-.MensajeBienvenida{ 
-    color: #FFFFFF;
-    position: absolute;
-    width: 540px;
-    height: 672px;
-    left: 772px;
-    top: 154px;
-    font-family: 'Gotham Black', sans-serif;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 99px;
+.mensajeOculto{
+  display: none;
+}
+
+#redesSociales {
+  position: absolute;
+  width: 280px;
+  height: 110x;
+  left: 280px;
+  top: 815px;
+}
+
+.MensajeBienvenida {
+  color: #FFFFFF;
+  position: absolute;
+  width: 540px;
+  height: 672px;
+  left: 772px;
+  top: 154px;
+  font-family: 'Gotham Black', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 99px;
 }
 
 
-.piePagina{
-    color: #B8B8B8;
-    position: absolute;
-    width: 607px;
-    height: 28px;
-    left: 700px;
-    top: 880px;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 11px;
-    text-align: center;
+.piePagina {
+  color: #B8B8B8;
+  position: absolute;
+  width: 607px;
+  height: 28px;
+  left: 700px;
+  top: 880px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 11px;
+  text-align: center;
 }

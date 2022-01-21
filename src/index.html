@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
 
-  <body>
-     
-    <header>
-     <div>
-        <div class="img_encabezado"></div>
-       <img src="recursos v/imagenes/header.png" width="1920px" height="80px">
-     </div>
-    
-    </header>
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
 
-    <section class="caja_validación">
+</head>
 
-        <div id="imagenTarjeta">
-            <img src="recursos v/imagenes/tarjeta.png" width="342px" height= "222px">
-        </div>
+<body>
 
-        <div class= "texto1"><h2>Canjea tu código</h2></div>
-        <div class="subtitulo"> <h4>Ingresa tu código premium <br>Digita los 16 números de tu tarjeta prepago</h4></div>
-        
-        <div class= "Digitos"> 
-         <input id="inputDigitos" type="number" value=" " placeholder="Ingresa Aquí"></div> -->
+  <header>
+    <div>
+      <div class="img_encabezado"></div>
+      <img src="recursos v/imagenes/header.png" width="1920px" height="80px">
+    </div>
+
+  </header>
+
+  <section class="caja_validación">
+
+    <div id="imagenTarjeta">
+      <img src="recursos v/imagenes/tarjeta.png" width="342px" height="222px">
+    </div>
+
+    <div class="texto1">
+      <h2>Canjea tu código</h2>
+    </div>
+    <div class="subtitulo">
+      <h4>Ingresa tu código premium <br>Digita los 16 números de tu tarjeta prepago</h4>
+    </div>
+
+    <div class="Digitos">
+      <input id="tarjeta" type="text" value="" placeholder="Ingresa Aquí">
+    </div>
 
     <div class="botonParaValidar">
-        <button id="botonValidar" class="button" onclick="funcionaqui">Verificar ahora</button>
+      <button id="botonValidar" class="button" onclick="undefined">Verificar ahora</button>
     </div>
 
-        <div class= "mensajeAlerta"> <p>Se produjo un error, Verifica los datos ingresados.</p></div>
-    </section>
-
-    <section id="redesSociales">
-    <div class= "imagenRedes">
-        <img src="recursos v/imagenes/redes.png" width="280px" height="110px">
+    <div id="mensajeError" class="mensajeOculto">
+      <p>Se produjo un error, Verifica los datos ingresados.</p>
     </div>
+  </section>
+
+  <section id="redesSociales">
+    <div class="imagenRedes">
+      <img src="recursos v/imagenes/redes.png" width="280px" height="110px">
+    </div>
+  </section>
+
+  <section class="MensajeBienvenida">
+    <div class="tutulo1">
+      <h1>Escucha <br>música y<br>podcast<br>sin límites</h1>
+    </div>
+  </section>
+
+  <footer>
+    <section class="piePagina">
+      <h6>Este proyecto esta realizado como práctica del ejercicio 1: "Card Validation", alumna Ana Lizárraga. <br>Los
+        logotipos utilizados son propiedad de la empresa Spotify</h6>
     </section>
+  </footer>
+  <script src="index.js" type="module"></script>
 
-    <section class="MensajeBienvenida">
-        <div class="tutulo1"><h1>Escucha <br>música y<br>podcast<br>sin límites</h1></div>
-    </section>
+</body>
 
-    <footer>
-        <section class="piePagina"><h6>Este proyecto esta realizado como práctica del ejercicio 1: "Card Validation", alumna Ana Lizárraga. <br>Los logotipos utilizados son propiedad de la empresa Spotify</h6></section>
-    </footer>
-    <script src="index.js" type="module"></script>
-
- </body>
 </html>
