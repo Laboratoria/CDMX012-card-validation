@@ -2,12 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Validador de Tarjeta de Crédito</title>
+       <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header></header>
-    <main></main>
+    
+    <header>
+<div class="titulo"> 
+  <h1>VALIDADOR DE TARJETA</h1>
+</div>
+<div class="argumento">
+  <p><h3>Validador de tarjeta es una herramienta que te 
+    ayuda a comprobar tu tarjeta con ayuda del algoritmo 
+    de Luhn</h3></p>
+</div>
+    </header>
+    <main>
+      <input type="text" id="inputTarjeta"/>
+      <br>
+      <button type="button" id="botonTarjeta">Validar</button>
+<br>
+
+<div class="resultadoValidacion" id="resultadoVaidacion">  </div>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>

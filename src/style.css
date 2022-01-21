@@ -1,0 +1,16 @@
+body {
+background-color: #C9D5B5;
+}
+.titulo {
+border:2px solid #4E3D42;
+text-align: center;
+border-radius: 12px;
+
+}
+.argumento {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
