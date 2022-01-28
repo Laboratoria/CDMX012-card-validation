@@ -3,7 +3,6 @@ const validator = {
   isValid: function (tarjeta) {
 
     let suma = 0;
-    console.log("is valid ants de for", tarjeta.length - 1);
     const cantidadDeDigitosEsImpar = (tarjeta.length - 1) % 2 === 0;
     for (let i = tarjeta.length - 1; i >= 0; i--) {
       let posicionPar = false;
@@ -22,7 +21,7 @@ const validator = {
           valor = entero + valor % 10;
         }
       }
-      console.log(i + "(" + posicionPar + "):" + tarjeta.charAt(i) + " => " + valor, typeof valor);
+      //console.log(i + "(" + posicionPar + "):" + tarjeta.charAt(i) + " => " + valor, typeof valor);
       suma = suma + valor;
     }
 
@@ -31,8 +30,33 @@ const validator = {
       return true;
     else
       return false;
+  },
+  maskify: function (tarjeta) {
+    if (tarjeta.length <= 4) {
+      return tarjeta
+    }
+    else {
+      //convierte el numero de tarjeta en un arreglo
+      let arreglo = tarjeta.split("");
+      console.log(arreglo);
+      //solo nos interesa enmascarar despues del 4to digito desde la derecha -1 porque los indices comienzan en 0
+      const quintaPosicion = (arreglo.length - 4) - 1;
+      //inicio en el 5to digito hacia la izquierda hasta llegar a posición 0
+      for (let i = quintaPosicion; i >= 0; i--) {
+        //cambio el valor en posición i por "#"
+        arreglo[i] = "#";
+      }
+      //console.log(arreglo);
+      //regreso la cadena madificada con .join 
+      const tarjetaEnmascarada = arreglo.join("");
+      return tarjetaEnmascarada;
+    }
   }
+
 }
+
+
+
 export default validator;
 
 
