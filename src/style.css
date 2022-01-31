@@ -1,9 +1,234 @@
-
-#card-wrapper {
-    border: 1px solid black;
-    padding: 20px; 
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    background-color: #ffcccc;
+body{
+    position: absolute;
+    width: 1426px;
+    height: 609px;
+    left: 0px;
+    top: 0px;
+    background: #FFD8D8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+main{
+    /*display: none;*/
+    position: absolute;
+    width: 1425px;
+    height: 359px;
+    left: 0px;
+    top: 613px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    background: #ffeded;
+    }   
+footer{
+    position: absolute;
+    width: 1425px;
+    height: 75px;
+    left: 1px;
+    top: 943px;
+    background: #948F92;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+    }
+header {
+    position: absolute;
+    width: 1379px;
+    height: 39px;
+    left: 23px;
+    top: 13px;
+    background: #FFEEF6;
+    border-radius: 10px;
+}
+h1{
+    position: absolute;
+    width: 143px;
+    height: 39px;
+    left: 61px;
+    top: 0px;
+    font-family: Work Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 5px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #E4B986;
+}
+h2{
+    position: absolute;
+    width: 496px;
+    height: 40px;
+    left: 891px;
+    top: 0px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 5px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.42);
+}
+h3{
+    position: absolute;
+    width: 254px;
+    height: 44px;
+    left: 395px;
+    top: 184px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FBEEF3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+div{
+    position: absolute;
+    width: 12px;
+    height: 248px;
+    left: 751px;
+    top: 196px;
+    background: #FBEEF3;
+    border-radius: 10px;
+}
+h4{
+    position: absolute;
+    width: 303px;
+    height: 116px;
+    left: 371px;
+    top: 286px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    color: #000000;}
+    h5{
+    position: absolute;
+    width: 173px;
+    height: 23px;
+    left: 600px;
+    top: 130px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+        }
+button{
+    position: absolute;
+    left: 32.12%;
+    right: 58.9%;
+    top: 42.41%;
+    bottom: 52.56%;
+    background: rgba(214, 0, 0, 0.07);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    width: 112px;
+    height: 48px;
+    left: 466px;
+    top: 433px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #494949;
+    border: 1px solid #ffffff;
+}
+[src="diamond.png"]{
+    position: absolute;
+    width: 31px;
+    height: 26px;
+    left: 46px;
+    top: 6px;
+    }
+[type="text"]{
+    position: absolute;
+    left: 43.3%;
+    right: 34.53%;
+    top: 52.92%;
+    bottom: 38.64%;
+    background: rgba(196, 196, 196, 0.36);
+    border-radius: 5px;   
+}
+[type="submit"]{
+    position: absolute;
+    left: 58.39%;
+    right: 29.26%;
+    top: 72.98%;
+    bottom: 18.66%;
+    background: #FCC9C9;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    border: 1px solid #C1C1C1;
+}
+[src="reloj.png"]{
+    position: absolute;
+    width: 342px;
+    height: 335px;
+    left: 61px;
+    top: 139px;
+}
+[src="creditCard.png"]{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 180px;
+    top: 40px;
+}
+[src="mano.png"]{
+    position: absolute;
+    width: 499px;
+    height: 200px;
+    left: 10px;
+    top: 0px;
+    transform: rotate(0.34deg);
+}
+[src="tictock.png"]{
+    position: absolute;
+    width: 49px;
+    left: 48.04%;
+    right: 48.03%;
+    top: 18%;
+    bottom: 0.59%;
+}
+[src="insta.png"]{
+    width: 55px;
+    position: absolute;
+    left: 55.26%;
+    right: 41.16%;
+    top: 13%;
+    bottom: 0%;
+}
+[src="FB.png"]{
+    width: 44px;
+    position: absolute;
+    left: 40.82%;
+    right: 55.68%;
+    top: 20%;
+    bottom: 0.89%;
 }
