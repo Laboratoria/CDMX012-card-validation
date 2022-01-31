@@ -27,13 +27,14 @@
         src="https://www.bbva.es/content/dam/public-web/bbvaes/images/personas/productos/02_tarjetas/productos/credito/tarjeta-despues/2400x1600-tarjeta-despues.png.img.2400.1563794455180.png">
       <!--<label for="inputTarjeta">Número de tarjeta</label>-->
       <div class="input">
-        <input class="inputTarjeta" type="text" pattern="[0-9]" required maxlength="16" size="20" id="inputTarjeta"
+        <input class="inputTarjeta" type="text" required maxlength="16" size="20" id="inputTarjeta"
           placeholder="Número de tarjeta" />
       </div>
 
       <div class="button">
         <button class="botonValidar" type="button" id="botonTarjeta">Validar</button>
       </div>
+      <div class="mensajeAlerta" id="mensajeAlerta"></div>
       <div class="resultadoFinal" style="display: none;" id="resultadoFinal">
         <div class="tarjetaOculta" id="tarjetaOculta"></div>
         <div class="resultadoValidacion" id="resultadoVaidacion"> </div>

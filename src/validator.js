@@ -1,5 +1,12 @@
 const validator = {
 
+  soloNumeros: function (tarjeta) {
+    const regex = /^[0-9]*$/;
+    const soloNumeros = regex.test(tarjeta);
+    console.log(soloNumeros);
+    return soloNumeros;
+  },
+
   isValid: function (tarjeta) {
 
     let suma = 0;
