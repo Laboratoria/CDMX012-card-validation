@@ -1,18 +1,18 @@
-console.log("loquesea")
-var numbers = [];
 const validator = {
     maskify: (value)=>{
-        console.log(creditCardInput);
+        console.log(value);
+        let numbers = []
         var size = value.length;
         var lastValue = value.charAt(size-1);
         if (!size) return;
         numbers.push(lastValue);
         //if(numbers.length < 13){
+            console.log(numbers);
         document.getElementById("creditCardInput").value = value.replace(/\d/, "*");
         //}
     },
     isValid: (creditCardInput)=>{   
-        numbers.reverse()
+        let numbers = Array.from(creditCardInput).reverse();
       for (var i=0; i<numbers.length; i++){
           if(i%2!==0){
               numbers[i] = numbers[i]*2;

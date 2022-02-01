@@ -4,15 +4,8 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="./index.js" type="text/javascript"></script>
-    <script type="module">
-      import validator, {prueba} from "./validator.js";      
-      window.maskify = ()=>{
-        const value = document.getElementById("creditCardInput").value;
-        validator.maskify(value);
-      };
+    
       
-    </script>
   </head>
   <body>
     <div></div>
@@ -29,11 +22,11 @@
       <h5>Numero de tarjeta</h5>
       <span id="card-wrapper">
       
-        <input type="text" id="creditCardInput" onkeyup="maskify()" required maxlength="16"  placeholder="**** **** **** ****">
-        <input type="submit" onclick="prueba()">
+        <input type="text" id="creditCardInput" onkeypress="return event.charCode>=48&&event.charCode<=57" required maxlength="16"  placeholder="**** **** **** ****">
+        <input type="submit" id="validateLong">
       </span>
     </main>
     <footer><img src="tictock.png" alt=""><img src="insta.png" alt="insta"><img src="FB.png" alt=""></footer>
-    
+    <script src="./index.js" type="module"></script> 
   </body>
 </html>

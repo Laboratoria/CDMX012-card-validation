@@ -1,4 +1,4 @@
-var numbers = [];
+import validator from "./validator.js";
 
 //var creditCardInput = document.getElementById("creditCardInput").value;
 //console.log(creditCardInput);
@@ -18,16 +18,19 @@ function payWithCard(){
   };
 
   function validateLong(){
-    if(numbers.length !== /[0-9]/){
-        alert("escriba solo números")
-    }
-    if(numbers.length == 0 || /\s/.test(numbers)){
+    var creditCardInput = document.getElementById("creditCardInput").value;
+    console.log(creditCardInput);
+    
+    if(creditCardInput.length == 0 || /\s/.test(creditCardInput)){
         alert("campo vacio o con espacios")
     }
-    if(numbers.length >= 13 && numbers.length <= 16){
-        validator.isValid(numbers);
+    if(creditCardInput.length >= 13 && creditCardInput.length <= 16){
+        validator.isValid(creditCardInput);
+        validator.maskify(creditCardInput);
     }
         else {
         alert("ingrse un numero valido")
         }
 }
+
+document.getElementById("validateLong").addEventListener("click",validateLong);
