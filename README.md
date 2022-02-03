@@ -12,7 +12,8 @@ En este proyecto se llevará acabo el desarrollo de una interfaz en la cual se v
 
 ## 2. Imagen final de proyecto
 
- ![Fig 1. Prototipo Final](https://i.ibb.co/y4myWN4/Pantalla-principal.png)
+ ![Fig 1. Prototipo Final](https://raw.githubusercontent.com/AnnaLizarraga/CDMX012-card-validation/main/src/recursos%20v/Prototipo/Pantalla%20principal.png)
+ Fig 1. Prototipo Final
 
 
 ## 3. investigación UX
@@ -27,7 +28,8 @@ La mayoría de los usuarios han reflejado que no se sienten cómodos domiciliand
 
 ### Boceto en papel
 
-![Fig 2. Boceto](https://i.ibb.co/C17ZRqh/Boceto.png)
+![Fig 2. Boceto](https://raw.githubusercontent.com/AnnaLizarraga/CDMX012-card-validation/main/src/recursos%20v/Prototipo/Boceto.png)
+Fig 2. Boceto
 
 ### Resumen del feedback
 
@@ -35,6 +37,11 @@ En el feedback se sugirió que la función de enmascarado no se mostrara cuando 
 
 ### Prototipo final
 
-![Fig 3. Prototipo pantalla principal](https://i.ibb.co/y4myWN4/Pantalla-principal.png)
-![Fig 4. Prototipo pantalla alerta](https://i.ibb.co/YB1cmyH/pant-2-alert.png)
-![Fig 5. Prototipo pantalla válida](https://i.ibb.co/dsNBz5W/Tarjeta-Valida.png)
+![Fig 3. Prototipo pantalla principal](https://raw.githubusercontent.com/AnnaLizarraga/CDMX012-card-validation/main/src/recursos%20v/Prototipo/Pantalla%20principal.png)
+Fig 3. Prototipo pantalla principal
+
+![Fig 4. Prototipo pantalla alerta](https://raw.githubusercontent.com/AnnaLizarraga/CDMX012-card-validation/main/src/recursos%20v/Prototipo/pant%202%20alert.png)
+Fig 4. Prototipo pantalla alerta
+
+![Fig 5. Prototipo pantalla válida](https://raw.githubusercontent.com/AnnaLizarraga/CDMX012-card-validation/main/src/recursos%20v/Prototipo/Tarjeta%20Valida%20.png)
+Fig 5. Prototipo pantalla válida
