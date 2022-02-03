@@ -1,27 +1,23 @@
 const validator = {
     maskify: (value)=>{
-        console.log(value);
         let numbers = []
         var size = value.length;
         var lastValue = value.charAt(size-1);
         if (!size) return;
         numbers.push(lastValue);
-        //if(numbers.length < 13){
-            console.log(numbers);
-        document.getElementById("creditCardInput").value = value.replace(/\d/, "*");
-        //}
+        return value.replace(/.(?=.{4,}$)/g, '#');
     },
     isValid: (creditCardInput)=>{   
         let numbers = Array.from(creditCardInput).reverse();
-      for (var i=0; i<numbers.length; i++){
+        var i = 0
+      for (i=0; i<numbers.length; i++){
           if(i%2!==0){
               numbers[i] = numbers[i]*2;
-          }
-          else{
+          } else {
               numbers[i] = Number.parseInt(numbers[i]);
           }
       }
-      for(var i=0; i<16; i++){
+      for(i=0; i<16; i++){
           if(numbers[i]>9){
              var stringArray = numbers[i].toString().split("")
              var array1 = Number.parseInt(stringArray[0]);
@@ -32,13 +28,13 @@ const validator = {
       }
       var total = numbers.reduce((a, b) => a + b, 0);
       if(total%10===0){
-          alert("tarjeta valida")
+        //alert("¡Gracias por tu compra!")
+        return true;  
+      } else {
+        //alert("tarjeta invalida")  
+        return false;
       }
-      else{
-          alert("tarjeta no valida")
-      }
-      console.log(total);
+      //console.log(total);
     }
 }
-
 export default validator;
