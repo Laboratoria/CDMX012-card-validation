@@ -2,24 +2,21 @@ body{
     position: absolute;
     width: 1426px;
     height: 609px;
-    left: 0px;
-    top: 0px;
     background: #FFD8D8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 main{
-    /*display: none;*/
+    display: none;
     position: absolute;
     width: 1425px;
     height: 359px;
-    left: 0px;
     top: 613px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
     background: #ffeded;
-    }   
+}   
 footer{
     position: absolute;
     width: 1425px;
@@ -29,7 +26,7 @@ footer{
     background: #948F92;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px 10px 0px 0px;
-    }
+}
 header {
     position: absolute;
     width: 1379px;
@@ -45,7 +42,7 @@ h1{
     height: 39px;
     left: 61px;
     top: 0px;
-    font-family: Work Sans;
+    font-family: Work Sans’, sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 25px;
@@ -60,7 +57,7 @@ h2{
     height: 40px;
     left: 891px;
     top: 0px;
-    font-family: Work Sans;
+    font-family: Work Sans’, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -75,7 +72,7 @@ h3{
     height: 44px;
     left: 395px;
     top: 184px;
-    font-family: Work Sans;
+    font-family: Work Sans’, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 34px;
@@ -83,15 +80,7 @@ h3{
     text-align: center;
     letter-spacing: -0.02em;
     color: #FBEEF3;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
-div{
-    position: absolute;
-    width: 12px;
-    height: 248px;
-    left: 751px;
-    top: 196px;
-    background: #FBEEF3;
-    border-radius: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 h4{
     position: absolute;
@@ -99,36 +88,22 @@ h4{
     height: 116px;
     left: 371px;
     top: 286px;
-    font-family: Work Sans;
+    font-family: Work Sans’, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
     text-align: justify;
     letter-spacing: -0.02em;
-    color: #000000;}
-h5{
-    position: absolute;
-    width: 173px;
-    height: 23px;
-    left: 600px;
-    top: 130px;
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: -0.02em;
     color: #000000;
-        }
-button{
+}
+#Realizar-compra{
     position: absolute;
     left: 32.12%;
     right: 58.9%;
-    top: 42.41%;
+    top: 45.41%;
     bottom: 52.56%;
-    background: rgba(214, 0, 0, 0.07);
+    background: #948f9273;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -137,16 +112,89 @@ button{
     width: 112px;
     height: 48px;
     left: 466px;
-    top: 433px;
-    font-family: Work Sans;
+    top: 450px;
+    font-family: Work Sans’, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #494949;
+    color: #ffffff;
     border: 1px solid #ffffff;
+}
+#rectangulo-rosa {
+    position: absolute;
+    height: 65%;
+    left: 15%;
+    right: 14.25%;
+    top: 5%;
+    bottom: 50.14%;
+    background: rgba(255, 216, 216, 0.616);
+    border-radius: 20px;
+}
+#creditCardInput{
+    position: absolute;
+    left: 38.3%;
+    right: 34.53%;
+    top: 52.65%;
+    bottom: 38.64%;
+    background: rgba(255, 255, 255, 0.568);
+    border-radius: 5px;   
+}
+#Comprar{
+    position: absolute;
+    left: 46.39%;
+    right: 29.26%;
+    top: 72.98%;
+    bottom: 18.66%;
+    background: #948f92dc;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    font-family: Work Sans’, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    border: 1px solid #ffffff;   
+}
+#instrucciones{
+    position: absolute;
+    height: 23px;
+    left: 269px;
+    top: 30px;
+    }
+#precio{
+    position: absolute;
+    width: 112px;
+    height: 23px;
+    left: 466px;
+    top: 270px;   
+}
+.producto-imagen{
+    position: absolute;
+    width: 12px;
+    height: 248px;
+    left: 751px;
+    top: 196px;
+    background: #FBEEF3;
+    border-radius: 10px;
+}
+.subtitulo{
+    font-family: Work Sans’, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
 }
 [src="diamond.png"]{
     position: absolute;
@@ -154,37 +202,6 @@ button{
     height: 26px;
     left: 46px;
     top: 6px;
-    }
-[type="text"]{
-    position: absolute;
-    left: 43.3%;
-    right: 34.53%;
-    top: 52.92%;
-    bottom: 38.64%;
-    background: rgba(196, 196, 196, 0.36);
-    border-radius: 5px;   
-}
-[type="submit"]{
-    position: absolute;
-    left: 58.39%;
-    right: 29.26%;
-    top: 72.98%;
-    bottom: 18.66%;
-    background: #FCC9C9;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    position: absolute;
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-    border: 1px solid #C1C1C1;
 }
 [src="reloj.png"]{
     position: absolute;
@@ -197,8 +214,8 @@ button{
     position: absolute;
     width: 400px;
     height: 250px;
-    left: 180px;
-    top: 40px;
+    left: 500px;
+    top: 65px;
 }
 [src="mano.png"]{
     position: absolute;

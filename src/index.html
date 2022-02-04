@@ -12,18 +12,20 @@
     <img src="reloj.png" alt="reloj">
     <header><img src="diamond.png" alt="diamond"><h1>Joyería</h1><h2>GALERÍA NOVEDADES EDICIÓN LIMITADA</h2></header>
     <h3>Reloj de cuarzo</h3>
-    <div><img src="mano.png" alt="mano"></div>
+    <div class="subtitulo" id="precio">$8,999</div>
+    <div class="producto-imagen"><img src="mano.png" alt="mano"></div>
     <h4>Exclusivo reloj de oro rosa 18 quilates, reloj de cuarzo, minimalista, resistente al agua. Edición limitada con brazalete ajustable y cierre con broche.</h4>
-    <a href=""><button type="button" id="payWithCard">Realizar compra</button></a>
+    <button type="button" id="Realizar-compra">Realizar compra</button>
     <div></div>
     
     <main id="main">
+      <div id="rectangulo-rosa"></div>
       <img src="creditCard.png" alt="" id="card">
-      <h5>Numero de tarjeta</h5>
+      <div class="subtitulo" id="instrucciones">Tus datos están registrados. Por favor, ingresa tu numero de tarjeta para continuar con tu compra</div>
       <span id="card-wrapper">
       
         <input type="text" id="creditCardInput" onkeypress="return event.charCode>=48&&event.charCode<=57" required maxlength="16"  placeholder="**** **** **** ****">
-        <input type="submit" id="validateLong">
+        <input type="submit" id="Comprar" value="Comprar">
       </span>
     </main>
     <footer><img src="tictock.png" alt=""><img src="insta.png" alt="insta"><img src="FB.png" alt=""></footer>

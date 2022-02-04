@@ -28,13 +28,10 @@ const validator = {
       }
       var total = numbers.reduce((a, b) => a + b, 0);
       if(total%10===0){
-        //alert("¡Gracias por tu compra!")
         return true;  
       } else {
-        //alert("tarjeta invalida")  
         return false;
       }
-      //console.log(total);
     }
 }
 export default validator;
