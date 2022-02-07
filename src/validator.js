@@ -19,7 +19,7 @@ const validator = {
         posicionPar = i % 2 === 0;
       }
 
-      let valor = tarjeta.charAt(i) * 1;
+      let valor = Number(tarjeta.charAt(i));
 
       if (posicionPar) {
         valor = valor * 2;
