@@ -1,5 +1,26 @@
 # Tarjeta de crédito válida
 
+El proyecto es una aplicación web que le permita a un usuario validar el 
+número de una tarjeta de crédito. Ademas con la funcionalidad de ocultar 
+todos los dígitos de una tarjeta menos los últimos cuatro y solo aceptar 
+números sin campos vacíos.
+
+Se pensó en tonos azules en la aplicación ya que resultan frescos y confiables.
+El mensaje de los resultados de la validación se colocaron concisos y claros,
+envueltos  en colores relacionados a repuestas boleanas para hacerlo mas visual
+(rojo y verde).
+
+La interacción en la página es intuitiva y en caso de colocar en el input de entrada
+algun caracter incorrecto o no aceptado se le indica al usuario por medio de un 
+mensaje que tipo de dato acepta y con que caracteristicas.
+
+La aplicación va enfocada hacia aquellas personas que necesite validar una tarjeta
+para poder usarla en distintos sitios web como por ejemplo tiendas online.
+
+
+![Imagen final del proyecto](https://www.mediafire.com/view/w6lmxjm32ljf057)
+
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)

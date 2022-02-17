@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Validador de Tarjeta de Crédito</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cuerpo">
+    <header>
+      <div class="titulo">
+        <h1>VALIDADOR DE TARJETA</h1>
+      </div>
+      <div class="argumento">
+        <p>
+        <h3>Una herramienta que te ayudará
+          a comprobar tu tarjeta de crédito/debito
+        </h3>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <img
+        src="https://www.bbva.es/content/dam/public-web/bbvaes/images/personas/productos/02_tarjetas/productos/credito/tarjeta-despues/2400x1600-tarjeta-despues.png.img.2400.1563794455180.png">
+      <!--<label for="inputTarjeta">Número de tarjeta</label>-->
+      <div class="input">
+        <input class="inputTarjeta" type="text" required maxlength="16" size="20" id="inputTarjeta"
+          placeholder="Número de tarjeta" />
+      </div>
+
+      <div class="button">
+        <button class="botonValidar" type="button" id="botonTarjeta">Validar</button>
+      </div>
+      <div class="mensajeAlerta" id="mensajeAlerta"></div>
+      <div class="resultadoFinal" style="display: none;" id="resultadoFinal">
+        <div class="tarjetaOculta" id="tarjetaOculta"></div>
+        <div class="resultadoValidacion" id="resultadoVaidacion"> </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>Author: Yazmín Trujillo <a href="lirio280688@hotmail.com">lirio280688@hotmail.com</a> Copyright &copy; 2022-2023
+    </p>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
