@@ -1,8 +1,7 @@
 //Validando los números ingresados y regresandolos en reversa.
 const validator = {
-  isValid: function isValid(cardNumber) {
+  isValid: function (cardNumber) {
     let parseCard = cardNumber.split("");
-    //console.log(parseCard)
     parseCard.reverse();
     let card = parseCard;
     //let card = Array.from(cardNumber).reverse();
@@ -25,12 +24,9 @@ const validator = {
         } else {
           card2.push(card[i]);
         }
-        //console.log(card)
       } else {
         card2.push(parseInt(card[i]));
-        //console.log('par '+card[i])
       }
-      //console.log(card2);
 
       total = total + card2[i];
       //console.log(total);
@@ -45,7 +41,7 @@ const validator = {
     return result;
   },
 
-  maskify: function maskify(cardNumber) {
+  maskify: function (cardNumber) {
     let array = cardNumber.split("");
     let result;
 
@@ -58,7 +54,7 @@ const validator = {
       }
     }
     result = array2.join("");
-    //console.log(result);
+    
     return result;
   },
 };

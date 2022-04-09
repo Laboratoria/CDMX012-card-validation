@@ -4,22 +4,21 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="../src/img/Hello Kitty.png">
   </head>
-  <body align="center">
+  <body>
     <main class="contenedor">
-    <strong>
-      <header>Validador de tarjetas de débito y crédito</header>
-    </strong><br>
-    <img src="img/kitty.jpg" alt="Tarjeta Hello Kitty"><br><br><br>
+    <div id="contenedor_header">
+    <img src="img/HK tarjeta.jpg" id="hk_tarjeta" alt="Tarjeta Hello Kitty">
+    <h1>Validador de tarjetas de débito y crédito</h1></div>
       <div class="box-numbers"><label for="name">Número de tarjeta</label>
         <input type="text" name="numbers" id="cardNumber" placeholder="xxxx xxxx xxxx 1234" required maxlength="16">
         <button type="button" id="boton"> Validar </button><br>
         <div class="valid-mask">
-          <label id="validation" align="center"></label>
+          <label id="validation"></label>
           <label id="maskify"></label>
         </div>
       </div>   
-    <br><br><br><br> 
   </main>
   <footer>Ejercicio de tarjeta de crédito válida con algoritmo de Luhn.</footer>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

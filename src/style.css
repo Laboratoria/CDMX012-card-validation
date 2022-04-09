@@ -1,55 +1,48 @@
-body {
-    background: #FFE3EA;
-   font-size: 20px;
-   font-family: sans-serif;
-   
+*{
+   background: #FFE3EA; 
+   font-family: "lato", sans-serif;
 }
-
+.contenedor{
+   font-size: 18px;
+   display: flex;
+   flex-direction: column;
+}
+#contenedor_header{
+    display: flex;
+    justify-content: space-evenly;
+}
 .valid-mask{
     display: flex;
     flex-direction: column;
 }
 #boton{
-    font-family: sans-serif;
     font-size: 20px;
+    font-weight: bold;
     background: #b3abe9;
     border-radius: 10px;
     border-color: #A49BE0;
     border-style: outset;
     cursor: pointer;
 }
-
-label{
-    margin: 5px;
-}
-
 .valid{
     color: #26cf17;
 }
-
 .invalid{
     color: #941062;
 }
-
-header {
-    font-size: 30px;
-    font-family: sans-serif;
-    vertical-align: center;
-}
 .box-numbers{
     font-size: 25px;
-    font-family: sans-serif;
     text-align: center;
     background-color: #f4c1cf;
     width: 500px;
+    height: 150px;
     border: 7px;
     border-style: outset;
     border-radius: 15px;
     border-color: #A49BE0;
-    margin: 0 auto;
+    padding: 20px;  
 }
-
-img {
+#hk_tarjeta {
    width: 250px; 
    height: 150px;
    border-color: #c1909e;
@@ -65,7 +58,7 @@ footer{
     color: black;
 }
 #cardNumber{
-    font-size: 17px;
+    font-size: 20px;
     border: 5px;
     border-style: double;
     border-radius: 5px;
