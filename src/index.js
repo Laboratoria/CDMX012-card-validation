@@ -1,22 +1,23 @@
-import validator from './validator.js';
+import validator from "./validator.js";
 
-var inputTarjeta = document.getElementById("tarjeta");
+var inputCard = document.getElementById("num_card");
 
+var btn_validate = document.getElementById("validate_btn");
+btn_validate.addEventListener("click", getTarjeta);
 
-var botonValidar = document.getElementById("botonValidar");
-botonValidar.addEventListener("click", getTarjeta);
-
-
-
-function getTarjeta( ){
-    var numerosTarjeta= inputTarjeta.value;
-    if (validator.isValid(numerosTarjeta)==true){
-      localStorage.setItem("numerosDeTarjeta", validator.maskify(numerosTarjeta));
-        window.location.assign("./pagValid.html");
-      
-    }else{
-        var divMensaje = document.getElementById("mensajeError");
-        divMensaje.classList.remove('mensajeOculto');
-        divMensaje.classList.add('mensajeAlerta');
-    }  
-} 
+function getTarjeta() {
+  var toValidate = inputCard.value;
+  var singleCardNumber = toValidate.replace(/\s/g, "");
+  console.log(toValidate);
+console.log(singleCardNumber);
+debugger
+console.log(validator.isValid(singleCardNumber));
+  if (validator.isValid(singleCardNumber) === true) {
+    localStorage.setItem("validCard", validator.maskify(toValidate));
+    // window.location.assign("./pagValid.html");
+  } else {
+    var divMensaje = document.getElementById("error");
+    divMensaje.classList.remove("hide_message");
+    divMensaje.classList.add("error_message");
+  }
+}

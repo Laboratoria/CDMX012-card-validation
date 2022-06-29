@@ -5,65 +5,113 @@
   <meta charset="utf-8">
   <title>Spotify | Validar tarjeta</title>
   <link rel="stylesheet" href="style.css" />
-
 </head>
 
 <body>
+  <div class="main">
+    <header>
+      <img src="recursos v/imagenes//spotify.png" class="img_logo">
+      <div class="header_text_container">
+        <p class="header_text"><a href="https://open.spotify.com/">Premium</a></p>
+        <p class="header_text"><a href="https://support.spotify.com/mx/">Ayuda</a></p>
+        <p class="header_text"><a
+            href="https://www.spotify.com/mx/download/windows/?_ga=2.211884819.645853126.1656391441-1825732225.1656391441&_gac=1.61940446.1656391441.CjwKCAjwquWVBhBrEiwAt1Kmwrc0OLY5bJofCIFp_PRmWyzb56SMWMsLg-vBYKqvlpHuFxyeFP3ERhoC2XcQAvD_BwE">Descargar</a>
+        </p>
+        <p class="header_text_a">|</p>
+        <img src="recursos v/imagenes/Anna profile.jpg" class="img_user">
+        <p class="header_text_a"><a href="https://github.com/AnnaLizarraga">Perfil</a></p>
+      </div>
+    </header>
 
-  <header>
-    <div>
-      <div class="img_encabezado"></div>
-      <img src="recursos v/imagenes/header.png" width="1920px" height="80px">
-    </div>
+    <!-- ///contenedor -->
+    <section class="validation_box">
+      <!-- ///tarjeta -->
+      <div class="card_container" id="card">
+        <!-- ///delantera -->
+        <div class="card_front">
+          <img src="recursos v/imagenes/card.png" class="img_card">
+          <div class="card_data">
+            <div clas="card_info" id="cardNumber">
+              <p class="label">Número Tarjeta</p>
+              <p class="data" id="num_user_card">#### #### #### ####</p>
+            </div>
+            <div class="flex">
+              <div clas="card_info" id="cardName">
+                <p class="label">Nombre</p>
+                <p class="data_flex" id="name_user_card">Jhon Doe</p>
+              </div>
+              <div clas="card_info" id="cardVigency">
+                <p class="label">Vigencia</p>
+                <p class="data_flex"> <span class="day">DD</span>/<span class="month">MM</span>/<span
+                    class="year">22</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ///trasera -->
+        <div class="card_back">
+          <img src="recursos v/imagenes/cardBack.png" class="img_card">
+          <div class="card_pin" id="cardVigency">
+            <p class="label">PIN</p>
+            <p class="data_flex"> <span class="pin">0000</span></p>
+          </div>
+        </div>
 
-  </header>
+      </div>
 
-  <section class="caja_validación">
 
-    <div id="imagenTarjeta">
-      <img src="recursos v/imagenes/tarjeta.png" width="342px" height="222px">
-    </div>
+      <div class="text_content">
+        <p class="title">Canjea tu código</p>
+        <p class="subtitle">Ingresa tus datos</p>
+      </div>
+      <input required class="input_form" id="num_card" type="text" value="" placeholder="Número de tarjeta" maxlength="19" autocomplete="off">
+      <input required class="input_form" id="num_name" type="text" value="" placeholder="Nombre" maxlength="15">
+      <!-- flex -->
+      <div class="select_group_container">
+        <!-- grupo expira -->
+        <div class="vigency_container">
+          <!-- select mes -->
+          <lablel for="vigency">Dia de inicio de activación</lablel>
+          <!-- flexbox -->
+          <div class="select_grup">
 
-    <div class="texto1">
-      <h2>Canjea tu código</h2>
-    </div>
-    <div class="subtitulo">
-      <h4>Ingresa tu código premium <br>Digita los 16 números de tu tarjeta prepago</h4>
-    </div>
+              <select class="select_vigency" name="day" id="vigency_day">
+                <option disabled selected>Dia</option>
+              </select>
 
-    <div class="Digitos">
-      <input id="tarjeta" type="text" value="" placeholder="Ingresa Aquí">
-    </div>
+              <select class="select_vigency" name="month" id="vigency_month">
+                <option disabled selected>Mes</option>
+              </select>
 
-    <div class="botonParaValidar">
-      <button id="botonValidar" class="button" onclick="undefined">Verificar ahora</button>
-    </div>
+          </div>
+        </div>
+        <div class="pin_container">
+          <label for="inputPin">PIN</label>
+          <input class="input_pin" type="text" id="inputPin" maxlength="4">
+        </div>
+      </div>
 
-    <div id="mensajeError" class="mensajeOculto">
-      <p>Se produjo un error, Verifica los datos ingresados.</p>
-    </div>
+      <button class="button" id="validate_btn" class="button" onclick="undefined">Verificar ahora</button>
+      <div id="error" class="hide_message">
+        <p>Se produjo un error, Verifica los datos ingresados</p>
+      </div>
+  </div>
   </section>
 
-  <section id="redesSociales">
-    <div class="imagenRedes">
-      <img src="recursos v/imagenes/redes.png" width="280px" height="110px">
-    </div>
-  </section>
+  <img class="socialMedia" src="recursos v/imagenes/redes.png">
 
-  <section class="MensajeBienvenida">
-    <div class="tutulo1">
-      <h1>Escucha <br>música y<br>podcast<br>sin límites</h1>
-    </div>
+  <section class="welcome_message">
+    <div class="walcome_text">Escucha <br>música y<br>podcasts<br>sin límites</div>
   </section>
 
   <footer>
-    <section class="piePagina">
-      <h6>Este proyecto esta realizado como práctica del ejercicio 1: "Card Validation", alumna Ana Lizárraga. <br>Los
-        logotipos utilizados son propiedad de la empresa Spotify</h6>
-    </section>
+    <p>Este proyecto esta realizado como práctica del ejercicio 1: "Card Validation", alumna Ana Lizárraga.
+      <br>Los logotipos utilizados son propiedad de la empresa Spotify
+      <br>Tarjeta valida para probar la app: 4137894711755904</p>
   </footer>
   <script src="index.js" type="module"></script>
-
+  <script src="card.js" type="module"></script>
+  </div>
 </body>
 
 </html>
