@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Spotify | Validar tarjeta</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Spotify | Card validation</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/aside.css" />
+  <link rel="stylesheet" href="./styles/mediaQuerys.css" />
 </head>
 
 <body>
@@ -27,33 +29,40 @@
     <section class="validation_box">
       <!-- ///tarjeta -->
       <div class="card_container" id="card">
-        <!-- ///delantera -->
         <div class="card_front">
-          <img src="recursos v/imagenes/card.png" class="img_card">
+          <img class="logo_card" src="recursos v/imagenes/spotify_premium.png">
+
           <div class="card_data">
-            <div clas="card_info" id="cardNumber">
-              <p class="label">Número Tarjeta</p>
-              <p class="data" id="num_user_card">#### #### #### ####</p>
+
+            <div id="cardNumber">
+              <p class="label">Número Tarjeta Prepago</p>
+              <p class="data" id="num_user_card"> **** **** **** **** </p>
             </div>
-            <div class="flex">
-              <div clas="card_info" id="cardName">
-                <p class="label">Nombre</p>
-                <p class="data_flex" id="name_user_card">Jhon Doe</p>
-              </div>
-              <div clas="card_info" id="cardVigency">
-                <p class="label">Vigencia</p>
-                <p class="data_flex"> <span class="day">DD</span>/<span class="month">MM</span>/<span
-                    class="year">22</span></p>
-              </div>
+
+            <div class="card_titles" id="cardName">
+              <div class="label_n">Nombre</div>
+              <div class="label_v">Vigencia</div>
             </div>
+
+            <div class="card_info" id="cardVigency">
+              <div class="data_name" id="name_user_card">Jhon Doe</div>
+              <div class="data_vigency"> <span class="day">DD</span>/<span class="month">MM</span>/<span>22</span></div>
+            </div>
+
           </div>
         </div>
         <!-- ///trasera -->
         <div class="card_back">
-          <img src="recursos v/imagenes/cardBack.png" class="img_card">
+
+          <img class="logo_card_back" src="recursos v/imagenes/spotify_premium.png">
+          <div class="subtitle_card">Importante: la configuración de país o región de tu cuenta deben
+            coincidir con el lugar donde se compró la tarjeta de regalo.
+            <br>Raspa con cuidado el código PIN de la tarjeta.
+            <br>Solo puedes canjear hasta 18 meses de Premium por vez con tu cuenta.
+          </div>
           <div class="card_pin" id="cardVigency">
             <p class="label">PIN</p>
-            <p class="data_flex"> <span class="pin">0000</span></p>
+            <p class="data_pin"> <span class="pin">0000</span></p>
           </div>
         </div>
 
@@ -64,41 +73,71 @@
         <p class="title">Canjea tu código</p>
         <p class="subtitle">Ingresa tus datos</p>
       </div>
-      <input required class="input_form" id="num_card" type="text" value="" placeholder="Número de tarjeta" maxlength="19" autocomplete="off">
-      <input required class="input_form" id="num_name" type="text" value="" placeholder="Nombre" maxlength="15">
-      <!-- flex -->
-      <div class="select_group_container">
-        <!-- grupo expira -->
-        <div class="vigency_container">
-          <!-- select mes -->
-          <lablel for="vigency">Dia de inicio de activación</lablel>
-          <!-- flexbox -->
-          <div class="select_grup">
 
-              <select class="select_vigency" name="day" id="vigency_day">
-                <option disabled selected>Dia</option>
+      <section class="form_content">
+
+        <input disabled unselectable="on" class="input_form" id="num_card" type="text" value=""
+          placeholder="Número de tarjeta">
+
+        <input required class="input_hide" id="num_hide" type="text" value="" placeholder="Número de tarjeta"
+          maxlength="19" autocomplete="off">
+
+        <input required class="input_form" id="num_name" type="text" value="" placeholder="Nombre" maxlength="15" autocomplete="off">
+
+        <div class="select_group_container">
+          <div class="vigency_container">
+            <lablel for="vigency">Dia de inicio del servicio</lablel>
+            <div class="select_grup">
+
+              <select required class="select_vigency" name="day" id="vigency_day">
+                <option disabled selected>Día</option>
               </select>
 
-              <select class="select_vigency" name="month" id="vigency_month">
+              <select required class="select_vigency" name="month" id="vigency_month">
                 <option disabled selected>Mes</option>
               </select>
 
+            </div>
+          </div>
+          <div class="pin_container">
+            <label for="inputPin">PIN</label>
+            <input required class="input_pin" type="text" id="inputPin" autocomplete="off" maxlength="4">
           </div>
         </div>
-        <div class="pin_container">
-          <label for="inputPin">PIN</label>
-          <input class="input_pin" type="text" id="inputPin" maxlength="4">
-        </div>
-      </div>
 
-      <button class="button" id="validate_btn" class="button" onclick="undefined">Verificar ahora</button>
+        <button id="validate_btn" class="button">Verificar ahora</button>
+      </section>
+
       <div id="error" class="hide_message">
-        <p>Se produjo un error, Verifica los datos ingresados</p>
+        <p>¡Error! Verifique datos ingresados.</p>
       </div>
   </div>
   </section>
 
-  <img class="socialMedia" src="recursos v/imagenes/redes.png">
+  <section class="socialMedia">
+    <div class="iconsMedia_container">
+
+      <div class="icon_cont">
+        <a href="https://twitter.com/spotifymexico?lang=es">
+          <img src="recursos v/imagenes/Twitter.png" class="Social_media_icon">
+        </a>
+      </div>
+
+      <div class="icon_cont">
+        <a href="https://www.facebook.com/SpotifyMX/?brand_redir=6243987495">
+          <img src="recursos v/imagenes/facebook.png" class="Social_media_icon">
+        </a>
+      </div>
+
+      <div class="icon_cont">
+        <a href="https://www.instagram.com/spotify/">
+          <img src="recursos v/imagenes/instagram.png" class="Social_media_icon">
+        </a>
+      </div>
+
+    </div>
+    <p class="link_text"><a href="https://open.spotify.com/">www.spoitfy.com</a></p>
+  </section>
 
   <section class="welcome_message">
     <div class="walcome_text">Escucha <br>música y<br>podcasts<br>sin límites</div>

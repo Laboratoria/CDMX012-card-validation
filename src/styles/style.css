@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,400;0,700;1,100&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  margin-top: 0px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/src/recursos\ v/imagenes/background.jpg');
+  background: linear-gradient(0);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ///////////////////header - nav */
+header {
+  width: 100%;
+  height: 10%;
+  position: sticky;
+  top: 0;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.img_logo {
+  margin: 0 2rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+.header_text_container {
+  width: 40%;
+  height: 5%;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_text_a {
+  font-family: 'Gotham', sans-serif;
+  color: #FFFFFF;
+  font-size: large;
+  font-weight: 700;
+}
+
+a {
+  position: relative;
+  font-family: 'Gotham', sans-serif;
+  font-size: large;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #00E896;
+  bottom: -3px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.img_user {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+/*/////////////////// redes sociales*/
+.socialMedia {
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  left: 10%;
+  top: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsMedia_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Social_media_icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.Social_media_icon:hover {
+  background-color: #00E896;
+  border-radius: 50%;
+}
+
+.icon_cont {
+  margin: 0 0 .5rem 0;
+}
+
+.link_text {
+  font-size: .5rem;
+}
+
+/*/////////////////// mensaje bienvenida*/
+.welcome_message {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  left: 30%;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  display: block;
+}
+
+.walcome_text {
+  color: #FFFFFF;
+  font-family: 'Gotham Black', sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: left;
+}
+
+/*/////////////////// footer*/
+footer {
+  color: #B8B8B8;
+  position: absolute;
+  left: 35%;
+  top: 93%;
+  font-family: 'Gotham', sans-serif;
+  font-style: normal;
+  font-size: xx-small;
+  line-height: 11px;
+  text-align: center;
+  display: block;
+}
+
+input:focus,
+select:focus {
+  outline: 3px#0a9b83;
+  box-shadow: 3px, 7px, 10px, -10px rgba(22, 217, 158, 0.3);
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px){
+  .img_logo {
+    margin-left: 10rem;
+    width: 10rem;
+    height: 3rem;
+  }
+
+.welcome_message {
+  width: 30%;
+  left: 37%;
+  top: 20%;
+}
+
+.walcome_text {
+  font-size: 4rem;
+}
+
+.socialMedia {
+  left: 13%;
+}
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+
+  .main {
+    background-image: url('/src/recursos\ v/imagenes/background_movil.jpg');
+    background: linear-gradient(to right, #00f261d0, #2658d6);
+  }
+
+  .welcome_message {
+    display: none;
+  }
+
+  header {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img_logo {
+    margin: .5rem 0 0 0;
+    width: 7rem;
+    height: 2rem;
+  }
+
+  .header_text_container {
+    width: 85%;
+    height: 50%;
+    margin-right: 1rem;
+  }
+
+  .header_text_a {
+    font-size: large;
+    font-weight: 700;
+  }
+
+  a {
+    font-size: .7rem;
+    font-weight: 700;
+  }
+
+  .socialMedia {
+    width: 50%;
+    left: 25%;
+    top: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Social_media_icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  footer {
+    display: none;
+  }
+} */
+
+

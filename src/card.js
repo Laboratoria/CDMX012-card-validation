@@ -1,7 +1,13 @@
-var inputCard = document.getElementById("num_card");
-var printNumCard = document.getElementById("num_user_card");
+import validator from "./validator.js";
 
-var inputNameCard = document.getElementById("num_name");
+//// aqui toma los valores para pasarlos al validador y al imput del form
+var inputCardHide = document.getElementById("num_hide");
+//// aqui muestra el masking en input
+var inputCard = document.getElementById("num_card");
+//// aqui muestra el masking en card
+var printNumMask = document.getElementById("num_user_card");
+
+var inputName = document.getElementById("num_name");
 var printNameCard = document.getElementById("name_user_card");
 
 var vigencyday = document.querySelector(".day");
@@ -9,36 +15,43 @@ var vigencymonth = document.querySelector(".month");
 var inputPin = document.querySelector("#inputPin");
 var Pin = document.querySelector(".pin");
 
+///// imprime numero en la tarjeta
+inputCardHide.addEventListener("keyup", (e) => {
+  // e.preventDefault();
+  let card_num_value = e.target.value;
+  let maskifyNums = validator.maskify(card_num_value); ///agrega espacio cada 4 digitos
+
+  inputCardHide.value = card_num_value
+    ///elimina los espacios
+    .replace(/\s/g, "")
+    ///elimina las letras
+    .replace(/\D/g, "")
+    ///Elimina el ultimo espacio
+    .trim();
+  turnCard();
+
+  inputCard.value = maskifyNums;
+  printNumMask.textContent = inputCard.value
+
+  if (inputCardHide.value == "") {
+    printNumMask.textContent = "**** **** **** ****";
+  }
+});
+
 ///// imprime nombre en la tarjeta
-inputNameCard.addEventListener("keyup", (e) => {
+inputName.addEventListener("keyup", (e) => {
   let card_name_value = e.target.value;
-  inputNameCard.value = card_name_value;
+  inputName.value = card_name_value;
   printNameCard.textContent = card_name_value;
   if (card_name_value == "") {
     printNameCard.textContent = "Jhon Doe";
   }
   turnCard();
 });
-///// imprime numero en la tarjeta
-inputCard.addEventListener("keyup", (e) => {
-  let card_num_value = e.target.value;
-  inputCard.value = card_num_value
-    ///elimina los espacios
-    .replace(/\s/g, "")
-    ///elimina las letras
-    .replace(/\D/g, "")
-    ///agrega espacio cada 4 digitos
-    .replace(/([0-9]{4})/g, "$1 ")
-    ///Elimina el ultimo espacio
-    .trim();
-  printNumCard.textContent = inputCard.value;
-  if (inputCard.value == "") {
-    printNumCard.textContent = "#### #### #### ####";
-  }
-  turnCard();
-});
+
 //pin
 inputPin.addEventListener("keyup", (e) => {
+  // e.preventDefault()
   let pin_value = e.target.value;
   inputPin.value = pin_value
     .replace(/\s/g, "")
@@ -59,11 +72,6 @@ const turnCard = () => {
     card.classList.remove("active");
   }
 };
-///voltea la tarjeta con click
-const card = document.querySelector("#card");
-card.addEventListener("click", () => {
-  card.classList.toggle("active");
-});
 
 ///select dia
 const selectDay = document.querySelector("#vigency_day");
@@ -85,12 +93,14 @@ for (let i = 1; i <= 12; i++) {
 
 //select day
 selectDay.addEventListener("change", (e) => {
+  // e.preventDefault()
   vigencyday.textContent = e.target.value;
   turnCard();
 });
 
 //select mes
 selectMonth.addEventListener("change", (e) => {
+  // e.preventDefault()
   vigencymonth.textContent = e.target.value;
   turnCard();
 });

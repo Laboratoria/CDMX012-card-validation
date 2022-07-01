@@ -1,0 +1,309 @@
+/*/////////////////// aside validacion*/
+.validation_box {
+  width: 25%;
+  height: 70%;
+  position: absolute;
+  left: 5%;
+  top: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50px;
+  justify-content: space-around;
+}
+
+/*/////////////////// tarjeta*/
+.card_container {
+  width: 15rem;
+  height: 9rem;
+  color: #FFFFFF;
+  position: relative;
+  transition: .3s ease all;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  margin: 1rem;
+}
+
+.card_front,
+.card_back {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/recursos\ v/imagenes/background_card.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.card_container.active {
+  transform: rotateY(180deg);
+}
+
+.logo_card,
+.logo_card_back {
+  width: auto;
+  height: 30%;
+  margin: .5rem 0;
+}
+
+.subtitle_card {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  margin: .2rem 0;
+}
+
+/* /////// info user */
+.card_data {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_titles,
+.card_info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card_info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.label,
+.label_n,
+.label_v {
+  font-family: 'Gotham', sans-serif;
+  font-size: .7rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.data,
+.data_name,
+.data_vigency,
+.data_pin {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 600;
+  font-size: .7rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.data {
+  font-size: medium;
+  margin-bottom: .3rem;
+}
+
+.label_n,
+.data_name {
+  width: 65%;
+  text-align: left;
+}
+
+.label_v,
+.data_vigency {
+  width: 35%;
+}
+
+/*/////////////////// trasera*/
+.card_back {
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.logo_card_back{
+  margin: .5rem 0;
+}
+.subtitle_card {
+  width: 80%;
+  height: auto;
+  font-family: 'Gotham', sans-serif;
+  font-style: normal;
+  font-size: .5rem;
+  line-height: 8px;
+  text-align: center;
+}
+
+.card_pin {
+  width: 25%;
+  height: auto;
+  color: #000000;
+  background-color: #ffffff;
+  position: relative;
+  margin-top: .5rem;
+}
+
+/*/////////////////// form*/
+.text_content {
+  width: 85%;
+  height: 15%;
+  text-align: center;
+}
+
+.title {
+  color: #000000;
+  font-family: 'Gotham Black', sans-serif;
+  font-style: normal;
+  font-size: xx-large;
+  line-height: 53px;
+}
+
+.subtitle {
+  font-family: 'Gotham Light', sans-serif;
+  font-size: small;
+  line-height: 30px;
+  color: #8C8C8C;
+}
+
+.form_content {
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_form {
+  position: relative;
+  width: 80%;
+  height: 15%;
+  margin-bottom: 1rem;
+  font-family: 'Gotham Light', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 15px;
+  color: #8C8C8C;
+  border: 3px solid #00E896;
+  user-select: none;
+}
+
+/*/////////////////// input hide*/
+.input_hide{
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 6%;
+  font-family: 'Gotham Light', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 15px;
+  color: #ffffff00;
+  background-color: #ffffff00;
+  border: 3px solid #75d60d00;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*/////////////////// selects*/
+
+.select_group_container {
+  width: 85%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-family: 'Gotham Light', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: #8C8C8C;
+}
+
+.vigency_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.select_grup {
+  display: flex;
+  flex-direction: row;
+}
+
+.select_vigency {
+  margin: .2rem .2rem .2rem 0;
+  width: 70%;
+  height: 2.4rem;
+  border: 3px solid #00E896;
+  color: #8C8C8C;
+  font-family: 'Gotham Light', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  background-color: #FFFFFF;
+}
+
+.pin_container {
+  width: 30%;
+}
+
+.input_pin {
+  width: 70%;
+  height: 1.9rem;
+  margin: .2rem 0;
+  font-family: 'Gotham Light', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 15px;
+  color: #8C8C8C;
+  border: 3px solid #00E896;
+}
+
+.button {
+  width: 85%;
+  height: 20%;
+  font-family: 'Gotham Light', sans-serif;
+  margin-top: .5rem;
+  font-style: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: #00E896;
+  border-radius: 27px;
+  border-style: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #0a9b83;
+}
+
+/*/////////////////// mensaje error*/
+#error {
+  width: 85%;
+  height: 5%;
+  margin: 1rem 0;
+  font-family: 'Gotham Light', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.error_message {
+  background-color: red;
+  color: #ffffff;
+}
+
+.hide_message {
+  font-size: .1rem;
+  color: #ffffff;
+}
