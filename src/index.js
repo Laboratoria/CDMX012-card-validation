@@ -9,7 +9,7 @@ btn_validate.addEventListener("click", getTarjeta);
 function getTarjeta() {
   var toValidate = inputCard.value;
   var singleCardNumber = toValidate.replace(/\s/g, "");
-  console.log(validator.isValid(singleCardNumber));
+
   if (validator.isValid(singleCardNumber) === true) {
     window.location.href = "https://open.spotify.com/";
     // localStorage.setItem("validCard", validator.maskify(toValidate));

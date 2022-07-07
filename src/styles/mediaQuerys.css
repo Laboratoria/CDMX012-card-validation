@@ -267,7 +267,7 @@
   }
 
   a {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 
@@ -318,11 +318,12 @@
   .select_vigency {
     height: 2rem;
     font-size: 18px;
+    padding-left: 32px;
   }
 
 
   .input_pin {
-    height: 1.6rem;
+    height: 1.5rem;
   }
 
   #error {
