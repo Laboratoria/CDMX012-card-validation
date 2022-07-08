@@ -3,10 +3,10 @@
 - [Español](##-Índice)
 <!-- - [English](##-Índice) -->
 
-***
- <!-- Aquí va el gif  -->
 
-## Deploy del proyecto:
+![Shows CRUD functionalities]https://raw.githubusercontent.com/AnnaLizarraga/CardValidation-Spotify/main/src/recursos%20v/Prototipo/gif_Card_Validation.gif)
+
+Deploy del proyecto:
 En Proceso…
 
 ***
@@ -28,21 +28,30 @@ Este algoritmo es simple. Obtenemos la reversa del número a verificar (que sola
 ***
 ## 2. Tech Skills del Proyecto
 
-###HTML 5 
-Semántico
+### HTML 5 
+- Semántico
 
-###CSS 
-Selectores de CSS, Box Model
+### CSS 
+- Selectores de CSS
+- Box Model
 
-## Web APIs
-Uso de selectores del DOM, manejo de eventos del DOM, manipulación dinámica del DOM.
+### Web APIs
+- Uso de selectores del DOM
+- Manejo de eventos del DOM
+- Manipulación dinámica del DOM
 
-###JavaScript Vanilla
-Datos primitivos, strings, variables, condicionales, bucles/ciclos, funciones, Módulos de ECMAScript.
+### JavaScript Vanilla
+- Datos primitivos
+- Strings
+- variables
+- Funciones
+- Condicionales
+- Bucles/ciclos
+- Módulos de ECMAScript.
 
-###Control de versiones Git- Github
-Init, clone, add, commit, status, push, pull, remote
-GitHub: Despliegue con GitHub Pages.
+### Control de versiones Git- Github
+- Init, clone, add, commit, status, push, pull, remote, checkout
+- GitHub: Despliegue con GitHub Pages.
 
 ***
 ## 3. Planeación
@@ -53,21 +62,24 @@ Puedes ver la planeación [aquí](https://github.com/AnnaLizarraga/CardValidatio
 ### Historia de Usuario 1: Validar Tarjeta.
 
 La interfaz debe permitir al usuario:
-•	Ingresar el número que queremos validar.
-•	No debe poder ingresar un campo vacío.
-•	Mostrar un altert si es un número de tarjeta inválido.
-•	Redirigir en caso de ser válido.
+
+-	Ingresar el número que queremos validar.
+-	No debe poder ingresar un campo vacío.
+-	Mostrar un altert si es un número de tarjeta inválido.
+-	Redirigir en caso de ser válido.
 
 ### Historia de Usuario 2: Maskify.
+
 La interfaz debe permitir al usuario:
-•	Ocultar todos los dígitos de su número de tarjeta menos los últimos 4 caracteres.
+
+-	Ocultar todos los dígitos de su número de tarjeta menos los últimos 4 caracteres.
 
 ***
 ## 4. Investigación UX
 
 ### ¿Quiénes son los usuarios de este producto?
 
-Los usuarios de esta herramienta son principalmente jóvenes “Milenials” (72%) que utilizan la aplicación de streaming de música Spotify, Con este producto se soluciona un problema que presentan los usuarios, el pago de la suscripción.
+Los usuarios de esta herramienta son principalmente jóvenes “Milenials” (72%) que utilizan la aplicación de streaming de música Spotify, con este producto se soluciona un problema que presentan los usuarios, el pago de la suscripción.
 
 ### ¿Cómo soluciona los problemas de los usuarios este producto?
 
@@ -91,7 +103,7 @@ Fig 1. Boceto
 Fig 2. Prototipo pantalla principal
 
 ![Fig 3. Prototipo pantalla datos ingresados](https://raw.githubusercontent.com/AnnaLizarraga/CardValidation-Spotify/main/src/recursos%20v/Prototipo/Principal_Data.jpg)
-Fig 3. Prototipo pantalla alerta
+Fig 3. Prototipo pantalla datos ingresados
 
 ![Fig 4. Prototipo pantalla alerta / hovers / reverso tarjeta](https://github.com/AnnaLizarraga/CardValidation-Spotify/blob/main/src/recursos%20v/Prototipo/Principal_Alerts.jpg)
-Fig 4. Prototipo pantalla válida
+Fig 4.Prototipo pantalla alerta / hovers / reverso tarjeta
