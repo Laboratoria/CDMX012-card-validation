@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" type="module"></script> 
   </head>
+
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <header>
+      <div id="joya"><img src="diamond.png" alt="diamond"><h1>Joyería</h1></div>
+      <h2>GALERÍA NOVEDADES EDICIÓN LIMITADA</h2>
+    </header>
+    <main>
+      <div id="fijo">
+        <img src="reloj.png" alt="reloj">
+        <div id="info-reloj">
+          <h3>Reloj de cuarzo</h3>
+          <h4>$8,999</h4>
+          <p>Exclusivo reloj de oro rosa 18 quilates, reloj de cuarzo, minimalista, resistente al agua. Edición limitada con brazalete ajustable y cierre con broche.</p>
+          <button type="button" id="Realizar-compra">Realizar compra</button>
+        </div>
+        <div class="barra"></div>
+        <img src="mano.png" alt="mano">
+      </div>      
+      <div id="pay">
+        <div id="rectangulo-rosa">
+          <h5>Tus datos están registrados. Por favor, ingresa tu numero de tarjeta para continuar con tu compra</h5>
+          <img src="creditCard.png" alt="creditCard" id="card">
+          <form action="validar tarjeta">
+            <input type="text" id="creditCardInput" onkeypress="return event.charCode>=48&&event.charCode<=57" required maxlength="16"  placeholder="**** **** **** ****">
+            <button type="submit" id="Comprar">Comprar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="insta.png" alt="insta">
+      <img src="tictock.png" alt="">
+      <img src="FB.png" alt="">
+    </footer>
   </body>
-</html>
+  
+  </html>
