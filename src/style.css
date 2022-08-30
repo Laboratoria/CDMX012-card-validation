@@ -1,66 +1,102 @@
-*{
-   background: #FFE3EA; 
-   font-family: "lato", sans-serif;
+* {
+  font-family: "lato", sans-serif;
+  background: #1d2028;
+  margin: 0%;
 }
-.contenedor{
-   font-size: 18px;
-   display: flex;
-   flex-direction: column;
+.container_main {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-#contenedor_header{
-    display: flex;
-    justify-content: space-evenly;
+#container_aside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 31px;
+  width: 40%;
+  color: #ffe9ff;
 }
-.valid-mask{
-    display: flex;
-    flex-direction: column;
+#container_username {
+  width: 15rem;
+  height: 2rem;
+  text-align: center;
 }
-#boton{
-    font-size: 20px;
-    font-weight: bold;
-    background: #b3abe9;
-    border-radius: 10px;
-    border-color: #A49BE0;
-    border-style: outset;
-    cursor: pointer;
+#subtitle {
+  font-size: 15px;
+  color: #ffe9ff;
+  margin-bottom: 20px;
 }
-.valid{
-    color: #26cf17;
+.username {
+  width: 65%;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #ffe9ff;
+  background-color: none;
 }
-.invalid{
-    color: #941062;
+#button_username {
+  background-color: #4d3aaa;
+  color: #ffe9ff;
+  border-radius: 5px;
 }
-.box-numbers{
-    font-size: 25px;
-    text-align: center;
-    background-color: #f4c1cf;
-    width: 500px;
-    height: 150px;
-    border: 7px;
-    border-style: outset;
-    border-radius: 15px;
-    border-color: #A49BE0;
-    padding: 20px;  
+.valid-mask {
+  display: flex;
+  flex-direction: column;
 }
-#hk_tarjeta {
-   width: 250px; 
-   height: 150px;
-   border-color: #c1909e;
-   border-radius: 10px;
-   border-style: groove;
+#button_send {
+  font-size: 20px;
+  font-weight: bold;
+  background: #b3abe9;
+  border-radius: 10px;
+  border-color: #a49be0;
+  border-style: outset;
+  cursor: pointer;
 }
-footer{
-    background-color: #f4c1cf;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: black;
+.valid {
+  color: #4adb82;
 }
-#cardNumber{
-    font-size: 20px;
-    border: 5px;
-    border-style: double;
-    border-radius: 5px;
-    border-color: #A49BE0;
+.invalid {
+  color: #f56c72;
+}
+.box-numbers {
+  font-size: 25px;
+  text-align: center;
+  /* background: rgba(217, 217, 217, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.2px);
+  -webkit-backdrop-filter: blur(2.2px); */
+  background: rgb(8, 215, 163);
+  background: linear-gradient(
+    128deg,
+    rgba(8, 215, 163, 1) 0%,
+    rgba(79, 156, 200, 1) 50%,
+    rgba(131, 110, 214, 1) 100%
+  );
+  width: 450px;
+  height: 180px;
+  border-radius: 30px;
+  padding: 30px;
+}
+.img-chip{
+  width: 55px;
+  height: 51px;
+  background: none;
+}
+/* .box-numbers :hover {
+  border: 1px solid #3c3c44;
+} */
+#cardNumber {
+  font-size: 23px;
+  border: none;
+
+  background: transparent;
+  border-color: none;
+}
+.img-mastercard {
+  width: 65px;
+  height: 40px;
+
+  background: rgba(131, 110, 214, 1);
+  
 }

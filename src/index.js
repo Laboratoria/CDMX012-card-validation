@@ -1,23 +1,32 @@
 import validator from "./validator.js";
 
-const button = document.getElementById("boton");
-button.addEventListener("click", getNumber);
+const buttonSend = document.getElementById("button_send");
+buttonSend.addEventListener("click", getNumber);
 
 function getNumber() {
-  let box = document.getElementById("cardNumber").value;
-  let maskify = validator.maskify(box);
-  let alert = document.getElementById("validation");
-  let validation = validator.isValid(box);
+  const boxNumbers = document.getElementById("cardNumber").value;
+  let maskify = validator.maskify(boxNumbers);
+  let validAlert = document.getElementById("validation");
+  let validation = validator.isValid(boxNumbers);
 
   if (validation === true) {
-    alert.innerHTML = "Tarjeta válida";
-    alert.classList.add("valid");
-    document.getElementById("maskify").innerHTML = maskify;
+    validAlert.innerHTML = "Valid card";
+    validAlert.classList.add("valid");
+    document.getElementById("maskifys").innerHTML = maskify;
   } else {
-    alert.innerHTML = "Tarjeta inválida";
-    alert.classList.add("invalid");
-    document.getElementById("maskify").innerHTML = maskify;
+    validAlert.innerHTML = "Invalid card";
+    validAlert.classList.add("invalid");
+    document.getElementById("maskifys").innerHTML = maskify;
   }
 
-  document.getElementById("cardNumber").innerHTML = validator.maskify(box);
+  document.getElementById("cardNumber").innerHTML =
+    validator.maskify(boxNumbers);
 }
+
+const userNameImpress = document.getElementById("user_name");
+const buttonUserName = document.getElementById("button_username");
+const userName = document.getElementById("username");
+
+buttonUserName.addEventListener("click", () => {
+  userNameImpress.innerHTML = userName.value;
+});
